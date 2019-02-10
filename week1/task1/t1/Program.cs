@@ -17,22 +17,23 @@ namespace t1
 
 
             int count = 0;
-            for (int i = 0; i < s.Length; i++)  //checking is the digit is prime, if yes count them
+            for (int i = 0; i < a; i++)  //checking is the digit is prime, if yes count them
             {
-                if (isPrime(s[i] - '0')) count++;
+                if (isPrime(int.Parse(parts[i]))) count++;
             }
             Console.WriteLine(count);  // write count to the console
-            for (int i = 0; i < s.Length; i++)
+            for (int i = 0; i < a; i++)
             {
-                if (isPrime(s[i] - '0')) Console.Write(s[i] + " ");
+                if (isPrime(int.Parse(parts[i]))) Console.Write(parts[i] + " ");
             }
 
             Console.ReadKey();
         }
         static bool isPrime(int a)  // func to check
         {
-            if (a < 2) return false;
-
+            if (a == 1) return false;
+            if (a == 2) return true;
+            if (a == 3) return true;
             for (int i = 2; i * i <= a; i++)
             {
                 if (a % i == 0) return false;
