@@ -5,3 +5,10 @@ C:\Users\user\Desktop\PP2\Week 1\task4\t4\t4\obj\Debug\t4.csprojAssemblyReferenc
 C:\Users\user\Desktop\PP2\Week 1\task4\t4\t4\obj\Debug\t4.csproj.CoreCompileInputs.cache
 C:\Users\user\Desktop\PP2\Week 1\task4\t4\t4\obj\Debug\t4.exe
 C:\Users\user\Desktop\PP2\Week 1\task4\t4\t4\obj\Debug\t4.pdb
+C:\Users\user\Desktop\pp2\week1\task4\t4\t4\obj\Debug\t4.csprojAssemblyReference.cache
+C:\Users\user\Desktop\pp2\week1\task4\t4\t4\obj\Debug\t4.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\pp2\week1\task4\t4\t4\obj\Debug\t4.exe
+C:\Users\user\Desktop\pp2\week1\task4\t4\t4\obj\Debug\t4.pdb
+C:\Users\user\Desktop\pp2\week1\task4\t4\t4\bin\Debug\t4.exe.config
+C:\Users\user\Desktop\pp2\week1\task4\t4\t4\bin\Debug\t4.exe
+C:\Users\user\Desktop\pp2\week1\task4\t4\t4\bin\Debug\t4.pdb

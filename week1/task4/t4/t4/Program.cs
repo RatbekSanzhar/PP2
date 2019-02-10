@@ -11,18 +11,30 @@ namespace t4
         static void Main(string[] args)
         {
 
-            String s = "[*]";  // creating [*]
-            int n = int.Parse(Console.ReadLine()); //reading number from console
-            //algorithm to create a stairs from [*]
-            for (int i = 1; i <= n; i++) // run the loop
-            {
-                for (int j = 0; j < i; j++) // run the second loop
-                {
-                    Console.Write(s); // write to console "[*]"
-                }
-                Console.Write("\n"); // go to the next line
-            }
-            Console.ReadKey();
+             int n = int.Parse(Console.ReadLine());  // read a number from console
+             int[] a = new int[n];  // create an array
+             string[] s = Console.ReadLine().Split(); // create an array from string
+             for (int i = 0; i < n; i++)  // run the loop
+             {
+                a[i] = int.Parse(s[i]); // convert from string to int
+             }
+             a = DoubleArr(a);  //  assign the result of method DoubleArr to array a
+             for (int i=0; i<a.Length;i ++) // run the loop
+             {
+             Console.Write(a[i] + " "); // write to console
+             }
+             Console.ReadKey();
+        }
+            
+        static int[] DoubleArr(int[] a) // method DoubleArr that writes every element of array twice
+        {
+             int[] newArr = new int[a.Length * 2];  // i create the new array with doubled up length
+             for (int i=0; i<a.Length; i++) // run the loop
+             {
+              newArr[i * 2] = a[i]; // write the elements twice
+              newArr[i * 2 + 1] = a[i]; 
+             }
+            return newArr; // return my double up array
         }
     }
 }
