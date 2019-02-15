@@ -6,36 +6,37 @@ using System.Threading.Tasks;
 
 namespace t4
 {
-    class Program
-    {
-        static void Main(string[] args)
+        class Program
         {
-
-             int n = int.Parse(Console.ReadLine());  // read a number from console
-             int[] a = new int[n];  // create an array
-             string[] s = Console.ReadLine().Split(); // create an array from string
-             for (int i = 0; i < n; i++)  // run the loop
-             {
-                a[i] = int.Parse(s[i]); // convert from string to int
-             }
-             a = DoubleArr(a);  //  assign the result of method DoubleArr to array a
-             for (int i=0; i<a.Length;i ++) // run the loop
-             {
-             Console.Write(a[i] + " "); // write to console
-             }
-             Console.ReadKey();
+            static void Main(string[] args)
+            {
+                int n;
+                n = Convert.ToInt32(Console.ReadLine());
+                string[,] array = new string[n, n];
+                for (int i = 0; i < n; i++)
+                {
+                    for (int j = 0; j < n; j++)
+                    {
+                        if (i > j || i == j)
+                        {
+                            array[i, j] = "[*]";
+                        }
+                        else
+                        {
+                            array[i, j] = "";
+                        }
+                    }
+                }
+                for (int i = 0; i < n; i++)
+                {
+                    for (int j = 0; j < n; j++)
+                    {
+                        Console.Write(array[i, j] + " ");
+                    }
+                    Console.WriteLine();
+                }
+                Console.ReadKey();
+            }
         }
-            
-        static int[] DoubleArr(int[] a) // method DoubleArr that writes every element of array twice
-        {
-             int[] newArr = new int[a.Length * 2];  // i create the new array with doubled up length
-             for (int i=0; i<a.Length; i++) // run the loop
-             {
-              newArr[i * 2] = a[i]; // write the elements twice
-              newArr[i * 2 + 1] = a[i]; 
-             }
-            return newArr; // return my double up array
-        }
-    }
 }
 
